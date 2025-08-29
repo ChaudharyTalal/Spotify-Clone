@@ -69,7 +69,9 @@ async function getSongs(folder) {
         let next = document.querySelector("#next");
         next.addEventListener("click", () => {
             console.log("Next clicked");
-            let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
+            // Extract the song filename from the currentSong.src
+            let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
+            let index = songs.findIndex(song => song === currentFile);
             if ((index + 1) < songs.length) {
                 currentSong.pause();
                 let nextSong = songs[index + 1];
@@ -83,10 +85,12 @@ async function getSongs(folder) {
         let previous = document.querySelector("#previous");
         previous.addEventListener("click", () => {
             console.log("Previous clicked");
-            let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0]);
+            // Extract the song filename from the currentSong.src
+            let currentFile = decodeURIComponent(currentSong.src.split("/").pop());
+            let index = songs.findIndex(song => song === currentFile);
             if ((index - 1) >= 0) {
-                currentSong.pause(); // Fixed: Add pause call
-                let previousSong = songs[index - 1]; // Fixed: Better variable naming
+                currentSong.pause();
+                let previousSong = songs[index - 1];
                 playMusic(previousSong);
                 songName.innerHTML = previousSong.replaceAll("%20", " ").replaceAll(".mp3", "");
                 play.src = "./img/pause.svg";
