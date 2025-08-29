@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify - Web Player: Music for everyone</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./utility-classes.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+  <script src="https://cdn.jsdelivr.net/npm/@iconify-json/hugeicons@1.2.6/index.min.js"></script>
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container flex ">
+    <div class="left ">
+      <div class="home bg-gray rounded m-1 p-1">
+        <div class="logo">
+          <img class="" src="./img/59b5bb466dbe923c39853e00.png" alt="" />
+          <img class="invert cross" src="./img/close.svg" alt="">
+        </div>
+        <ul>
+          <li><img class="invert" src="./img/home.svg" alt="" />Home</li>
+          <li><img class="invert" src="./img/search.svg" alt="" />Search</li>
+        </ul>
+      </div>
+
+
+      <div class="library bg-gray rounded m-1 p-1 ">
+        <div class="heading">
+          <i class="fa-solid fa-list-music"></i>
+
+          <h2>Your Library</h2>
+
+        </div>
+        <div class="songsList">
+          <ul>
+
+
+          </ul>
+        </div>
+
+        <div class="footer">
+          <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+          <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+          <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+          </div>
+          <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+          <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+          <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="right  bg-gray rounded m-1">
+      <div class="header">
+        <div class="nav">
+          <img class="invert hamburger" src="./img/hamburger.svg" alt="">
+          <i class="fa-solid fa-angle-left"></i>
+          <i class="fa-solid fa-angle-right"></i>
+        </div>
+        <div class="buttons">
+          <button class="signupbtn">SignUp</button>
+          <button class="loginbtn">Login</button>
+        </div>
+      </div>
+
+      <div class="spotifyPlaylist">
+
+        <h1 class="h1">Spotify Playlist</h1>
+
+        <div class="card-container">
+
+
+
+        </div>
+      </div>
+
+      <div class="playbar">
+        <div class="seek-bar">
+          <div class="circle"></div>
+        </div>
+        <div class="SongDetails">
+
+          <div class="songName">
+            SONG NAME
+          </div>
+
+          <div class="songbtn">
+            <img id="previous" src="./img/prevsong.svg" alt="">
+            <img id="play" src="./img/play.svg" alt="">
+            <img id="next" src="./img/nextsong.svg" alt="">
+          </div>
+
+          <div class="volume">
+
+            <div class="duration">
+              00:00/ 00:00
+            </div>
+            <div class="range">
+              <div class="vol">
+                <i class="fa-regular fa-volume-high"></i>
+              </div>
+              <input type="range" name="range" class="range1" value="100">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- <script src="./script.js"></script> -->
+  <script src="./script.js"></script>
+</body>
+
+</html>

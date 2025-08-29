@@ -1,0 +1,29 @@
+{
+  "albums": [
+    {
+      "folder": "mySongs",
+      "title": "My Selected",
+      "description": "Calm your Anger",
+      "songs": [
+        "Ghalat Fehmi Song  Superstar.mp3",
+        "Na Chedo Hume Hum Sataye Hue Hain.mp3",
+        "Anuv Jain - JO TUM MERE HO.mp3",
+        "AUR - TU HAI KAHAN.mp3",
+        "Radhe Title Track _ Radhe - Your Most Wanted Bhai _ Salman Khan _ Disha Patani _ Sajid Wajid(MP3_160K).mp3",
+        "Kesariya.mp3",
+        "Tera mera Payar hai amar.mp3",
+        "Pal Pal  Prod. AliSoomroMusic - AFUSIC.mp3"
+      ],
+      "cover": "cover.jpg"
+    },
+    {
+      "folder": "NFK",
+      "title": "English Songs",
+      "description": "Calm your Anger",
+      "songs": [
+        "_NSYNC - Bye Bye Bye (Lyrics) (Deadpool 3 Soundtrack)(360P).mp3"
+      ],
+      "cover": "cover.jpg"
+    }
+  ]
+}
